@@ -9,9 +9,9 @@ namespace RazorExpressions.Controllers
         Product myProduct = new Product
         {
             ProductID = 1,
-            Name = "Kayak",
-            Description = "A boat for 2 people",
-            Category = "Lake",
+            Name = "Atlantic",
+            Description = "The 211.61ft /64.50m Custom 'Atlantic' was built in 2010 by Van der Graaf.",
+            Category = "Sailing Yacht",
             Price = 22.00M
         };
         // GET: Home
