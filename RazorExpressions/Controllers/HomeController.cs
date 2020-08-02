@@ -26,5 +26,14 @@ namespace RazorExpressions.Controllers
         {
             return View(myProduct);
         }
+
+        public ActionResult UseViewBag()
+        {
+            ViewBag.ApplyDiscount = false;
+            ViewBag.ExpressShip = true;
+            ViewBag.ProductCount = 5;
+            ViewBag.Supplier = null;
+            return View(myProduct);
+        }
     }
 }
