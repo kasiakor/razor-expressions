@@ -1,0 +1,23 @@
+﻿@using RazorExpressions.Models
+@model Product[]
+
+@{
+    ViewBag.Title = "DemoArray";
+    Layout = "~/Views/_BasicLayout.cshtml";
+}
+
+@if (Model.Length > 0)
+{ 
+    <table>
+        <thead>
+            <tr><th>Product</th><th>Price</th></tr>
+        </thead>
+        <tbody>
+            @foreach (Product prod in Model)
+            {
+                <tr><td>@prod.Name</td><td>@prod.Price</td></tr>
+            }
+        </tbody>
+    </table>
+}
+

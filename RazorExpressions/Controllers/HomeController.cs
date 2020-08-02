@@ -16,7 +16,7 @@ namespace RazorExpressions.Controllers
         };
         // GET: Home
 
-            //Index method creates and populates the properties of product object
+        //Index method creates and populates the properties of product object
         public ActionResult Index()
         {
             return View(myProduct);
@@ -34,6 +34,18 @@ namespace RazorExpressions.Controllers
             ViewBag.ProductCount = 5;
             ViewBag.Supplier = null;
             return View(myProduct);
+        }
+
+        public ActionResult DemoArray()
+        {
+            Product[] prodArray =
+            {
+                 new Product { Name = "K1", Price = 25.00M, Category = "River" },
+                 new Product { Name = "K2", Price = 11.00M, Category = "Estuary" },
+                 new Product { Name = "K3", Price = 29.00M, Category = "Lake" }
+            };
+
+            return View(prodArray);
         }
     }
 }
